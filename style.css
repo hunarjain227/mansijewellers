@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ebd9a6; /* Premium dark background */
+  color: #685847;
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+}
+.top-banner{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ebd9a6;
+    padding:10px 0;
+}
+
+.top-banner img{
+    width:100%;
+    max-width:1200px;
+    height:auto;
+    display:block;
+    border-radius:10px;
+}
+.card-container {
+  width: 100%;
+  max-width: 420px; /* Mobile width constraint like Linktree */
+  text-align: center;
+}
+
+
+/* Header Styling */
+.profile {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #d4af37; /* Metallic Gold Border */
+  margin-bottom: 12px;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.profile h1 {
+  font-size: 1.6rem;
+  color: #685847; /* Soft Gold Text */
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  color: #685847;
+}
+
+/* Direct Link Buttons */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #ffffff;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+}
+
+/* Brand Button Colors */
+.whatsapp { background-color: #685847; }
+.call { background-color: #685847; }
+.instagram { background-color: #685847; }
+.pdf-btn { background-color: #685847; } /* Red for PDF */
+.location { background-color: #685847; color: #f5f1f1; } /* Gold button */
+
+/* Catalog Items */
+.catalog {
+  text-align: left;
+}
+
+.catalog h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #685847;
+  font-size: 1.1rem;
+}
+
+.item-card {
+  background: #685847;
+  border: 1px solid #685847;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.item-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item-details {
+  padding: 15px;
+}
+
+.item-details h4 {
+  color: #37251f;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.item-details p {
+  font-size: 0.85rem;
+  color: #d2b17f;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.view-pdf-link {
+  display: inline-block;
+  color: #f3e5ab;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    background: #ffffff;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Colors */
+.social a:nth-child(1):hover {
+    background: #1877F2;
+    color: #fff;
+    border-color: #1877F2;
+}
+
+.social a:nth-child(2):hover {
+    background: #E4405F;
+    color: #fff;
+    border-color: #E4405F;
+}
+
+.social a:nth-child(3):hover {
+    background: #FF0000;
+    color: #fff;
+    border-color: #FF0000;
+}
+
+.social a:nth-child(4):hover {
+    background: #25D366;
+    color: #fff;
+    border-color: #25D366;
+}
+
+.social a:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+} 
+footer {
+  margin-top: 30px;
+  font-size: 0.75rem;
+  color: #685847;
+}
+.btn{
+    padding:12px 30px;
+    background:#c89b3c;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+#sparkles{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.sparkle{
+    position:absolute;
+    font-size:30px;
+    animation:sparkle 1.2s linear forwards;
+}
+
+@keyframes sparkle{
+    0%{
+        transform:scale(0.5);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-180px) rotate(360deg) scale(1.8);
+        opacity:0;
+    }
+}
